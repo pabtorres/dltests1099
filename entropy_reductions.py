@@ -1,5 +1,5 @@
 import torch
-from torchvision import transforms
+import torchvision
 
 def quantize(T, stair):
   batches = torch.round((T*255-0.000001)/stair)
